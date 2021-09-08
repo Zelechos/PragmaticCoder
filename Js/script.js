@@ -6,3 +6,5 @@ function toggle(){
     sec.classList.toggle('active');
     nav.classList.toggle('active');
 }
+
+
