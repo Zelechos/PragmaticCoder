@@ -2,14 +2,12 @@
  * @Author : Pragmatic Coder
  * @Repositorio : https://github.com/Zelechos/DynamicText
  */
-
 'use strict'
 window.addEventListener('load',()=>{
     
-    let Text = document.querySelector("#DynamicText").innerHTML;
+    let Text = document.querySelector("#DynamicText").innerHTML  ;
     const Vacio = document.querySelector("#DynamicText").innerHTML = " ";
-
-    //console.error(Text);
+    // console.error(Text);
     const array = ['_' , '|' , '_', '|' ,'_' , '|' ,'_' , '|', '_' ] ;
 
     const palabra = Text.split("");
