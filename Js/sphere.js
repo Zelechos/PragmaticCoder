@@ -1,12 +1,10 @@
-import * as THREE from './three.module.js';
-
 // import './style.css'
-import * as THREE from 'three'
+import * as THREE from './three.module.js';
 
 // Loading
 const textureLoader = new THREE.TextureLoader()
 // Traemos una textura que queramos
-const normalTexture = textureLoader.load('/textures/NormalMap.png')
+const normalTexture = textureLoader.load('../static/textures/NormalMap.png')
 
 // Debug
 // const gui = new dat.GUI()
