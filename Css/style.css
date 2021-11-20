@@ -80,7 +80,7 @@ a {
 
 .content-main{
     font-family: 'Noto Serif KR', serif;
-    color: #837c7c;
+    color: #DBDBDB;
 }
 
 .content-main h2{
@@ -98,7 +98,7 @@ a {
 
 .redes{
     grid-area: redes;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
     border-radius: 10px;
 }
@@ -344,17 +344,29 @@ a {
 
 
 @media (max-width: 992px) {
+    .banner{
+        margin-bottom: 45vh;
+    }
     .banner h1{
-        font-size: 4em;
+        font-size: 3.5em;
+    }
+
+    .main{
+        height: 43vh;
     }
 
     .main h2{
         font-size: 2.5em;
     }
 
+    .redes{
+        text-align: center;
+        border: 3px solid #DBDBDB;
+        padding: 14px;
+    }
+
     .redes h2{
         font-size: 2em;
-
     }
     .image-banner{
         background-size: 100%;
