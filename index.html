@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1877f2">
     <title>Pragmatic Coder</title>
     <link rel="stylesheet" href="./Css/style.css">
-    <link rel="shortcut icon" href="./assets/Img/WorldBits.gif" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/Img/IconoOfficial.png" type="image/x-icon">
+    <script type="module" src="./Js/sphere.js"></script>
     <script type="text/javascript" src="./Js/DinamicText.js"></script>
 </head>
 <body>
     <section class="contenedor">
         
         <section class="banner">
-            <h1 id="DynamicText">El Codigo lo es Todo</h1>
-            <div class="image-banner">
-                <img class="image" src="./assets/Img/WorldBits.gif" alt="">
-            </div>
+            <h1 id="DynamicText">Pragmatic Coder</h1>
+            
+            <!-- Animacion con three.js -->
+            <a href="#redes">
+                <canvas class="webgl"></canvas>
+            </a>
         </section>
 
         <section class="main">
             <div class="content-main">
-                <h2>Hola <br><span>Soy Alex Tumiri</span></h2>
+                <h2>Hola <br>Soy <span>Alex Tumiri</span></h2>
                 <p>
                     Desarrollador frontend de paginas Web y programador en diferentes campos y areas del software me encanta programar si deseas trabajar conmigo a precios accesibles contactame.
                 </p>
             </div>
         </section>
 
-        <section class="redes">
+        <section class="redes" id="redes">
             <h2>Mis redes sociales</h2>
             <ul class="redes-sociales">
                 <li class="facebook">
@@ -48,8 +52,14 @@
                     </a>
                 </li>
 
+                <li class="linkedin">
+                    <a href="https://www.linkedin.com/in/alex-tumiri-huanca-6234b3195/" target="_blank">
+                        <img src="./assets/Img/linkedin.png">
+                    </a>
+                </li>
+
                 <li class="instagram">
-                    <a href="https://www.instagram.com/zelechos/" target="_blank">
+                    <a href="https://www.instagram.com/pragmatic_coder/" target="_blank">
                         <img src="./assets/Img/instagram.png">
                     </a>
                 </li>
@@ -59,13 +69,6 @@
                         <img src="./assets/Img/twitter.png">
                     </a>
                 </li>
-
-                <li class="linkedin">
-                    <a href="https://www.linkedin.com/in/alex-tumiri-6234b3195/" target="_blank">
-                        <img src="./assets/Img/linkedin.png">
-                    </a>
-                </li>
-
             </ul>
         </section>
 

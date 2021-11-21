@@ -10,9 +10,14 @@
 
 /* Color del Fondo de la Imagen WorldBits */
 body{
-    background-color: #202020 ;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #0d1117 ;
     font-weight: 300;
 	font-size: 16px;
+    background-attachment: fixed;
+    background-size: 100% 150%;
+    background-image: url(/assets/Img/bg-pagescontent.webp);
 }
 
 img {
@@ -44,8 +49,10 @@ a {
 
 .banner{
     grid-area: banner;
+    height: 25vh;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
+    margin-bottom: 18vh;
 }
 
 .banner h1{
@@ -55,11 +62,12 @@ a {
     margin-bottom: 20px;
 }
 
-.image-banner{
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    width: 30%;
+.webgl{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    mix-blend-mode: exclusion;
 }
 
 .main{
@@ -69,13 +77,12 @@ a {
 	flex-direction: column;
 	justify-content: space-between;
     height: 23em;
-    background-color: #F5F5F5;
+    border-radius: 10px;
 }
 
 .content-main{
     font-family: 'Noto Serif KR', serif;
-    color: #202020;
-    
+    color: #DBDBDB;
 }
 
 .content-main h2{
@@ -84,7 +91,7 @@ a {
 }
 
 .content-main span{
-    color: #757575;
+    color: #1877f2;
 }
 
 .content-main p{
@@ -93,12 +100,12 @@ a {
 
 .redes{
     grid-area: redes;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
-    
+    border-radius: 10px;
 }
 
-.redes h2{
+.redes h2{  
     font-family: 'Noto Serif KR', serif;
     font-size: 3em;
     color: #DBDBDB;
@@ -339,17 +346,29 @@ a {
 
 
 @media (max-width: 992px) {
+    .banner{
+        margin-bottom: 45vh;
+    }
     .banner h1{
-        font-size: 4em;
+        font-size: 3.5em;
+    }
+
+    .main{
+        height: 43vh;
     }
 
     .main h2{
         font-size: 2.5em;
     }
 
+    .redes{
+        text-align: center;
+        border: 3px solid #DBDBDB;
+        padding: 14px;
+    }
+
     .redes h2{
         font-size: 2em;
-
     }
     .image-banner{
         background-size: 100%;
@@ -366,7 +385,6 @@ a {
             'footer	 		footer 		footer      footer';
     }
 }
-
 
 @media (min-width: 1200px) { 
     
