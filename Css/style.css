@@ -17,7 +17,7 @@ body{
 	font-size: 16px;
     background-attachment: fixed;
     background-size: 100% 150%;
-    background-image: url('/assets/Img/bg-pagescontent.webp');
+    background-image: url('../assets/Img/bg-pagescontent.webp');
 }
 
 img {
