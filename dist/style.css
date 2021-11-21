@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
+
+/* --------- POR DEFECTO ---------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color del Fondo de la Imagen WorldBits */
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #0d1117 ;
+    font-weight: 300;
+	font-size: 16px;
+    background-attachment: fixed;
+    background-size: 100% 150%;
+    background-image: url('../assets/Img/bg-pagescontent.webp');
+}
+
+img {
+	object-fit: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor {
+    transition: 0.5s;
+    width: 99%;
+    max-width: 100em;
+    margin: 0em auto;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        'banner			banner   	banner       banner'
+        'main	        main        redes        redes'
+        'img-portafolio     img-portafolio   portafolio   portafolio    '
+        'img-portafolio1     img-portafolio1   portafolio1   portafolio1    '
+        'img-portafolio2     img-portafolio2   portafolio2   portafolio2    '
+        'footer	 		footer 		footer      footer';
+}    
+
+
+.banner{
+    grid-area: banner;
+    height: 25vh;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 18vh;
+}
+
+.banner h1{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 7em;
+    color: #DBDBDB;
+    margin-bottom: 20px;
+}
+
+.webgl{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    mix-blend-mode: exclusion;
+}
+
+.main{
+    grid-area: main;
+	padding: 1.1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    height: 23em;
+    border-radius: 10px;
+}
+
+.content-main{
+    font-family: 'Noto Serif KR', serif;
+    color: #DBDBDB;
+}
+
+.content-main h2{
+    font-size: 5em;
+    padding-bottom: 10px;
+}
+
+.content-main span{
+    color: #1877f2;
+}
+
+.content-main p{
+    font-size: 1.1em;
+}
+
+.redes{
+    grid-area: redes;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.redes h2{  
+    font-family: 'Noto Serif KR', serif;
+    font-size: 3em;
+    color: #DBDBDB;
+}
+
+.redes .redes-sociales{
+    display: flex;
+    flex-direction: row;
+}
+
+.redes .redes-sociales li{
+    list-style: none;
+    padding: 20px;
+}
+
+.redes .redes-sociales li a{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 5.125em;
+    height: 5.125em;
+    text-decoration: none;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+}
+
+/* Hover de Redes Sociales */
+.facebook a:hover{
+    background: #1877f2;
+    box-shadow: 4px 4px 4px 4px #1877f2;
+}
+
+.whatsapp a:hover{
+    background: #24da33;
+    box-shadow: 4px 4px 4px 4px #24da33;
+}
+
+.github a:hover{
+    background: #212121;
+    box-shadow: 4px 4px 4px 4px #212121;
+}
+
+.instagram a:hover{
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 4px 4px 4px 4px #8A2387;
+}
+
+.twitter a:hover{
+    background: #53b2e9;
+    box-shadow: 4px 4px 4px 4px #53b2e9;
+}
+
+.linkedin a:hover{
+    background: #0e92ffe1;
+    box-shadow: 4px 4px 4px 4px #0e92ffe1;
+}
+
+.redes .redes-sociales li a img{
+    max-width: 3.25em;
+    filter: invert(1);
+}
+
+/* PAGES */
+.portafolio{
+    grid-area: portafolio;
+    padding: 1.1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    height: 30em;
+    background-color: #F5F5F5;
+}
+
+.portafolio1{
+    
+    grid-area: portafolio1;
+    padding: 1.1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    height: 30em;
+    background-color: #F5F5F5;
+}
+.portafolio2{
+    grid-area: portafolio2;
+    padding: 1.1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    height: 30em;
+    background-color: #F5F5F5;
+}
+
+.content-portafolio{
+    font-family: 'Noto Serif KR', serif;
+    color: #202020;
+}
+
+.content-portafolio h2{
+    font-size: 5em;
+    padding-bottom: 10px;
+}
+
+.content-portafolio span{
+    color: #757575;
+}
+
+.content-portafolio p{
+    font-size: 1.1em;
+}
+
+.bg-img-portafolio{
+    grid-area: img-portafolio;
+    padding: 1.1em;
+    width: 100%;
+    height: 29em;
+    background: #360033;
+    background-image: url(../assets/Img/browser-nav.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 2px solid #0b8793;
+    z-index: -100;
+}
+
+.img-portafolio{
+    grid-area: img-portafolio;
+    width: 50%;
+    height: 30em;
+    margin-top: 20px;
+
+}
+
+.img-portafolio1{
+    grid-area: img-portafolio1;
+    width: 50%;
+    height: 30em;
+    margin-top: 20px;
+}
+.img-portafolio2{
+    grid-area: img-portafolio2;
+    width: 100%;
+    height: 30em;
+    background-color:rgb(65, 65, 65,6.5);
+    background-image: url(../assets/Img/browser-nav.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+
+.img-portafolio2 .img-page{
+    margin-top: 20px;
+}
+
+.img-page{
+    display: block;
+    margin-top: 5px;
+    margin-left: 2px;
+    width: 48.2em;
+    z-index: 10;
+    background-color: red;
+}
+
+
+.footer{
+    grid-area: footer;
+    background-image: url(../assets/Img/bg-pagescontent.webp);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* QUERIES */
+
+@media (max-width: 576px) {
+    .banner h1{
+        font-size: 2em;
+    }
+
+
+    .main h2{
+        font-size: 3em;
+    }
+
+    .redes h2{
+        font-size: 2em;
+    }
+
+    .image-banner{
+        background-size: 100%;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .banner h1{
+        font-size: 1em;
+    }
+
+    .redes{
+        padding: 0;
+    }
+    .redes-sociales{
+        padding-left: -10px;
+    }
+
+    .redes .redes-sociales li{
+        list-style: none;
+        padding: 5px;
+    }
+    
+    .redes .redes-sociales li a{
+        width: 2.5em;
+        height: 2.5em;
+        text-decoration: none;
+        border: 1px solid #DBDBDB;
+        border-radius: 5px;
+    }
+
+    .redes .redes-sociales li a img{
+        max-width: 1.25em;
+        filter: invert(1);
+    }
+    
+
+    .image-banner{
+        background-size: 100%;
+        width: 30%;
+        margin-bottom: 20px;
+    }   
+
+    .image-banner img{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .banner{
+        margin-bottom: 45vh;
+    }
+    .banner h1{
+        font-size: 3.5em;
+    }
+
+    .main{
+        height: 43vh;
+    }
+
+    .main h2{
+        font-size: 2.5em;
+    }
+
+    .redes{
+        text-align: center;
+        border: 3px solid #DBDBDB;
+        padding: 14px;
+    }
+
+    .redes h2{
+        font-size: 2em;
+    }
+    .image-banner{
+        background-size: 100%;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .contenedor {
+        grid-template-areas:
+            'banner			banner   	banner       banner'
+            'main	        main        main	   main'
+            'redes        redes       redes        redes'
+            'portafolio   portafolio     portafolio     portafolio'
+            'footer	 		footer 		footer      footer';
+    }
+}
+
+@media (min-width: 1200px) { 
+    
+}
+
