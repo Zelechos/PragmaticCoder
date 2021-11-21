@@ -1,5 +1,7 @@
 // import './style.css'
 import * as THREE from './three.module.js';
+import * as THREE from '';
+
 
 window.addEventListener('load',()=>{
 
@@ -7,8 +9,8 @@ window.addEventListener('load',()=>{
     // Loading
     const textureLoader = new THREE.TextureLoader()
     // Traemos una textura que queramos
-    const normalTexture = textureLoader.load('../static/textures/NormalMap.png');
-    
+
+    const normalTexture = textureLoader.load('../static/textures/height.png');
     // Debug
     // const gui = new dat.GUI()
     
