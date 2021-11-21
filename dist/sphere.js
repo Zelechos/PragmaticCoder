@@ -1,5 +1,5 @@
 // import './style.css'
-import * as THREE from './three.module.js';
+import * as THREE from '../Js/three.module.js';
 
 
 window.addEventListener('load',()=>{
