@@ -3,7 +3,6 @@ import * as THREE from './three.module.js';
 
 
 window.addEventListener('load',()=>{
-
     
     // Loading
     const textureLoader = new THREE.TextureLoader()
