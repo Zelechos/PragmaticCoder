@@ -53,75 +53,80 @@ window.addEventListener('load',()=>{
     
     // // agragando la opcion para editar el color en en gui
     // const light1Color = {
-        //     color : 0xffffff
-        // }
-        
-        // light1.addColor(light1Color, 'color')
-        //     .onChange(()=>{
-            //         pointLight.color.set(light1Color.color)
-            //     })
+    //     color : 0xffffff
+    // }
+
+    // light1.addColor(light1Color, 'color')
+    //     .onChange(()=>{
+    //         pointLight.color.set(light1Color.color)
+    //     })
+
+    // Cuerpo de ayudar para las lights
+    // const pointLightHelper = new THREE.PointLightHelper(pointLight, 1)    
+    // scene.add(pointLightHelper)
             
-            // Cuerpo de ayudar para las lights
-            // const pointLightHelper = new THREE.PointLightHelper(pointLight, 1)    
-            // scene.add(pointLightHelper)
+    //--------------------- light 2 ---------------------
+    const pointLight2 = new THREE.PointLight(0xffffff, .4)
+    pointLight2.position.set(-2.3, -3, -2.56)
+    // pointLight2.intensity = 1
+    scene.add(pointLight2)
             
-            //--------------------- light 2 ---------------------
-            const pointLight2 = new THREE.PointLight(0xffffff, .4)
-            pointLight2.position.set(-2.3, -3, -2.56)
-            // pointLight2.intensity = 1
-            scene.add(pointLight2)
+    // const light2 = gui.addFolder('Light 2')
             
-            // const light2 = gui.addFolder('Light 2')
+    // light2.add(pointLight2.position, 'y').min(-3).max(3).step(0.01)
+    // light2.add(pointLight2.position, 'x').min(-3).max(3).step(0.01)
+    // light2.add(pointLight2.position, 'z').min(-3).max(3).step(0.01)
+    // light2.add(pointLight2, 'intensity').min(0).max(10).step(0.01)
             
-            // light2.add(pointLight2.position, 'y').min(-3).max(3).step(0.01)
-            // light2.add(pointLight2.position, 'x').min(-3).max(3).step(0.01)
-            // light2.add(pointLight2.position, 'z').min(-3).max(3).step(0.01)
-            // light2.add(pointLight2, 'intensity').min(0).max(10).step(0.01)
-            
-            // // Agregamos al gui el manejos de color
-            // const light2Color = {
-                //     color : 0xffffff
-                // }
-                
-                // light2.addColor(light2Color, 'color')
-                //     .onChange(()=>{
-                    //         pointLight2.color.set(light2Color.color)
-                    //     })
-                    
-                    // const pointLight2Helper = new THREE.PointLightHelper(pointLight2, 1)
-                    // scene.add(pointLight2Helper)
-                    
-                    /**
-                     * Sizes
-                     */
-                    const sizes = {
-                        width: window.innerWidth,
-                        height: window.innerHeight
-                    }
-                    
-                    window.addEventListener('resize', () =>
-                    {
-                        // Update sizes
-                        sizes.width = window.innerWidth
-                        sizes.height = window.innerHeight
-                        
-                        // Update camera
-                        camera.aspect = sizes.width / sizes.height
-                        camera.updateProjectionMatrix()
-                        
-                        // Update renderer
-                        renderer.setSize(sizes.width, sizes.height)
-                        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-                    })
-                    
-                    /**
-                     * Camera
-                     */
-                    // Base camera
-                    const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-                    camera.position.x = 0
-camera.position.y = 0
-camera.position.z = 2
+    // // Agregamos al gui el manejos de color
+    // const light2Color = {
+    //     color : 0xffffff
+    // }
+
+    // light2.addColor(light2Color, 'color')
+    //     .onChange(()=>{
+    //         pointLight2.color.set(light2Color.color)
+    //     })
+
+    // const pointLight2Helper = new THREE.PointLightHelper(pointLight2, 1)
+    // scene.add(pointLight2Helper)
+    
+    /**
+    * Sizes
+    */
+    
+    const sizes = {
+    width: window.innerWidth,
+    height: window.innerHeight
+    }
+    
+window.addEventListener('resize', () => {
+    
+    // Update sizes
+    sizes.width = window.innerWidth
+    sizes.height = window.innerHeight
+
+    
+    // Update camera
+    
+    camera.aspect = sizes.width / sizes.height
+    camera.updateProjectionMatrix()
+    
+    // Update renderer
+    renderer.setSize(sizes.width, sizes.height)
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+})
+
+/**
+* Camera
+*/
+
+// Base camera
+
+const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
+camera.position.x = 0
+camera.position.y = 0.045
+camera.position.z = 1.45
 scene.add(camera)
 
 // Controls
@@ -159,7 +164,7 @@ function onDocumentMouseMove(event){
 }
 
 const updateSphere = (event) =>{
-    sphere.position.z = window.scrollY * .002
+    sphere.position.z = window.scrollY * .0015
 }
 
 window.addEventListener('scroll', updateSphere);

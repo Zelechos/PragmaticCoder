@@ -10,14 +10,11 @@
 
 /* Color del Fondo de la Imagen WorldBits */
 body{
-    height: 100vh;
+	height: 100vh;
     overflow-x: hidden;
     font-weight: 300;
 	font-size: 16px;
-	background-color: #212121;
-    background-attachment: fixed;
-    background-size: 100% 150%;
-    background-image: url('../assets/Img/bg-pagescontent.webp');
+	background-color: #202020;
 }
 
 
@@ -491,6 +488,9 @@ a {
 }
 
 .contenedor {
+	background-image: url('../assets/Img/bg-banner.webp');
+
+	
     transition: 0.5s;
     width: 99%;
     max-width: 100em;
@@ -529,7 +529,7 @@ a {
     top: 0;
     left: 0;
     outline: none;
-    mix-blend-mode: exclusion;
+	z-index: 0;	
 }
 
 .main{
@@ -540,6 +540,7 @@ a {
 	justify-content: space-between;
     height: 23em;
     border-radius: 10px;
+	z-index: 1;
 }
 
 .content-main{
@@ -565,6 +566,7 @@ a {
     padding: 10px;
     margin: auto;
     border-radius: 10px;
+	z-index: 1;
 }
 
 .redes h2{  
