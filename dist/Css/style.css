@@ -10,13 +10,11 @@
 
 /* Color del Fondo de la Imagen WorldBits */
 body{
-    height: 100vh;
+	height: 100vh;
     overflow-x: hidden;
     font-weight: 300;
 	font-size: 16px;
-    background-attachment: fixed;
-    background-size: 100% 150%;
-    background-image: url('../assets/Img/bg-pagescontent.webp');
+	background-color: #202020;
 }
 
 
@@ -490,6 +488,9 @@ a {
 }
 
 .contenedor {
+	background-image: url('../assets/Img/bg-banner.webp');
+
+	
     transition: 0.5s;
     width: 99%;
     max-width: 100em;
@@ -528,7 +529,7 @@ a {
     top: 0;
     left: 0;
     outline: none;
-    mix-blend-mode: exclusion;
+	z-index: 0;	
 }
 
 .main{
@@ -539,6 +540,7 @@ a {
 	justify-content: space-between;
     height: 23em;
     border-radius: 10px;
+	z-index: 1;
 }
 
 .content-main{
@@ -564,6 +566,7 @@ a {
     padding: 10px;
     margin: auto;
     border-radius: 10px;
+	z-index: 1;
 }
 
 .redes h2{  
@@ -631,112 +634,8 @@ a {
     filter: invert(1);
 }
 
-/* PAGES */
-.portafolio{
-    grid-area: portafolio;
-    padding: 1.1em;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-    height: 30em;
-    background-color: #F5F5F5;
-}
-
-.portafolio1{
-    
-    grid-area: portafolio1;
-    padding: 1.1em;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-    height: 30em;
-    background-color: #F5F5F5;
-}
-.portafolio2{
-    grid-area: portafolio2;
-    padding: 1.1em;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-    height: 30em;
-    background-color: #F5F5F5;
-}
-
-.content-portafolio{
-    font-family: 'Noto Serif KR', serif;
-    color: #202020;
-}
-
-.content-portafolio h2{
-    font-size: 5em;
-    padding-bottom: 10px;
-}
-
-.content-portafolio span{
-    color: #757575;
-}
-
-.content-portafolio p{
-    font-size: 1.1em;
-}
-
-.bg-img-portafolio{
-    grid-area: img-portafolio;
-    padding: 1.1em;
-    width: 100%;
-    height: 29em;
-    background: #360033;
-    background-image: url(../assets/Img/browser-nav.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 2px solid #0b8793;
-    z-index: -100;
-}
-
-.img-portafolio{
-    grid-area: img-portafolio;
-    width: 50%;
-    height: 30em;
-    margin-top: 20px;
-
-}
-
-.img-portafolio1{
-    grid-area: img-portafolio1;
-    width: 50%;
-    height: 30em;
-    margin-top: 20px;
-}
-.img-portafolio2{
-    grid-area: img-portafolio2;
-    width: 100%;
-    height: 30em;
-    background-color:rgb(65, 65, 65,6.5);
-    background-image: url(../assets/Img/browser-nav.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 2px solid white;
-}
-
-.img-portafolio2 .img-page{
-    margin-top: 20px;
-}
-
-.img-page{
-    display: block;
-    margin-top: 5px;
-    margin-left: 2px;
-    width: 48.2em;
-    z-index: 10;
-    background-color: red;
-}
-
-
 .footer{
     grid-area: footer;
-    background-image: url(../assets/Img/bg-pagescontent.webp);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 
 /* QUERIES */
