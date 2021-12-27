@@ -76,7 +76,6 @@ body{
 		-moz-animation: cssload-dot-colors 4.6s ease infinite;
 }
 
-
 .cssload-dot:nth-child(1) {
 	animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
 		-o-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
@@ -472,9 +471,6 @@ body{
 }
 
 /*-------------------- Preloader End --------------------*/
-
-
-
 img {
 	object-fit: cover;
 }
@@ -489,8 +485,6 @@ a {
 
 .contenedor {
 	background-image: url('../assets/Img/bg-banner.webp');
-
-	
     transition: 0.5s;
     width: 99%;
     max-width: 100em;
@@ -502,10 +496,6 @@ a {
     grid-template-areas:
         'banner			banner   	banner       banner'
         'main	        main        redes        redes'
-        'img-portafolio     img-portafolio   portafolio   portafolio    '
-        'img-portafolio1     img-portafolio1   portafolio1   portafolio1    '
-        'img-portafolio2     img-portafolio2   portafolio2   portafolio2    '
-        'footer	 		footer 		footer      footer';
 }    
 
 

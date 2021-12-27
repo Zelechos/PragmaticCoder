@@ -2,6 +2,8 @@
 
 // -----------------Preloader------------------------
 window.onload = ()=>{
-    $('#preloader').fadeOut();
-    $('#invisible').removeClass('invisible');
+    setTimeout(()=>{
+        $('#preloader').fadeOut(1);
+        $('#invisible').removeClass('invisible');
+    },2000);
 }
