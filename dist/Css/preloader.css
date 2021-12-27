@@ -24,6 +24,7 @@
 	left: 0;
 	top: 0;
 }
+
 .cssload-dot:before {
 	content: "";
 	width: 34px;
