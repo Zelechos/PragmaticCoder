@@ -5,5 +5,5 @@ window.onload = ()=>{
     setTimeout(()=>{
         $('#preloader').fadeOut(1);
         $('#invisible').removeClass('invisible');
-    },500);
+    },1500);
 }
