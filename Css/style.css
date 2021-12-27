@@ -174,13 +174,11 @@ a {
     grid-area: footer;
 }
 
-/* QUERIES */
-
+/* ------------------- QUERIES -------------------*/
 @media (max-width: 576px) {
     .banner h1{
         font-size: 2em;
     }
-
 
     .main h2{
         font-size: 3em;
@@ -239,7 +237,6 @@ a {
         width: 100%;
     }
 }
-
 
 @media (max-width: 992px) {
     .banner{
