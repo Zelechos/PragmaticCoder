@@ -1,6 +1,6 @@
 import * as THREE from './three.module.js';
 
-window.addEventListener('load',()=>{
+window.addEventListener('DOMContentLoaded',()=>{
     
     // Loading
     const textureLoader = new THREE.TextureLoader()

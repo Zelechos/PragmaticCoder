@@ -1,9 +1,10 @@
 'use strict'
 
 // -----------------Preloader------------------------
-window.onload = ()=>{
+const w = window;
+w.addEventListener('DOMContentLoaded',e => {
     setTimeout(()=>{
         $('#preloader').fadeOut(1);
         $('#invisible').removeClass('invisible');
-    },1500);
-}
+    },2000);
+})
