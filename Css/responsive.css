@@ -1,0 +1,108 @@
+/* ------------------- QUERIES -------------------*/
+@media (max-width: 576px) {
+    .banner h1{
+        font-size: 2em;
+    }
+
+    .main h2{
+        font-size: 3em;
+    }
+
+    .redes h2{
+        font-size: 2em;
+    }
+
+    .image-banner{
+        background-size: 100%;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .banner h1{
+        font-size: 1em;
+    }
+
+    .redes{
+        padding: 0;
+    }
+    .redes-sociales{
+        padding-left: -10px;
+    }
+
+    .redes .redes-sociales li{
+        list-style: none;
+        padding: 5px;
+    }
+    
+    .redes .redes-sociales li a{
+        width: 2.5em;
+        height: 2.5em;
+        text-decoration: none;
+        border: 1px solid #DBDBDB;
+        border-radius: 5px;
+    }
+
+    .redes .redes-sociales li a img{
+        max-width: 1.25em;
+        filter: invert(1);
+    }
+    
+
+    .image-banner{
+        background-size: 100%;
+        width: 30%;
+        margin-bottom: 20px;
+    }   
+
+    .image-banner img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .banner{
+        margin-bottom: 45vh;
+    }
+    .banner h1{
+        font-size: 3.5em;
+    }
+
+    .main{
+        height: 43vh;
+    }
+
+    .main h2{
+        font-size: 2.5em;
+    }
+
+    .redes{
+        text-align: center;
+        border: 3px solid #DBDBDB;
+        padding: 14px;
+    }
+
+    .redes h2{
+        font-size: 2em;
+    }
+    .image-banner{
+        background-size: 100%;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .contenedor {
+        grid-template-areas:
+            'banner			banner   	banner       banner'
+            'main	        main        main	   main'
+            'redes        redes       redes        redes'
+            'portafolio   portafolio     portafolio     portafolio'
+            'footer	 		footer 		footer      footer';
+    }
+}
+
+@media (min-width: 1200px) { 
+}
+
