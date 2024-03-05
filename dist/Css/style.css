@@ -1,175 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap");
 
 /* --------- POR DEFECTO ---------*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Color del Fondo de la Imagen WorldBits */
-body{
-	height: 100vh;
-    overflow-x: hidden;
-    font-weight: 300;
-	font-size: 16px;
-	background-color: #0f151e;
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: #0f151e;
 }
 
 img {
-	object-fit: cover;
+  object-fit: cover;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
-.invisible{
-    display: none;
+.invisible {
+  display: none;
 }
 
-.contenedor {
-	background-image: url('../assets/Img/bg-banner.webp');
-    transition: 0.5s;
-    width: 99%;
-    max-width: 100em;
-    margin: 0em auto;
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-        'banner			banner   	banner       banner'
-        'main	        main        redes        redes'
-}    
-
-
-.banner{
-    grid-area: banner;
-    height: 25vh;
-    text-align: center;
-    padding-top: 10px;
-    margin-bottom: 18vh;
+.banner {
+  grid-area: banner;
+  height: 55vh;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 18vh;
 }
 
-.banner h1{
-    font-family: 'Noto Serif KR', serif;
-    font-size: 7em;
-    color: #DBDBDB;
-    margin-bottom: 20px;
+.banner h1 {
+  font-family: "Noto Serif KR", serif;
+  font-size: 5em;
+  color: #dbdbdb;
 }
 
-.webgl{
-    position: absolute;
-    top: 0;
-    left: 0;
-    outline: none;
-	z-index: 0;	
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  z-index: 0;
 }
 
-.main{
-    grid-area: main;
-	padding: 1.1em;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-    height: 23em;
-    border-radius: 10px;
-	z-index: 1;
+.redes {
+  width: 100vh;
+  text-align: center;
+  place-items: center;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  z-index: 1;
 }
 
-.content-main{
-    font-family: 'Noto Serif KR', serif;
-    color: #DBDBDB;
+.redes h2 {
+  font-family: "Noto Serif KR", serif;
+  font-size: 2em;
+  color: #dbdbdb;
 }
 
-.content-main h2{
-    font-size: 5em;
-    padding-bottom: 10px;
+.redes .redes-sociales {
+  padding-right: 90px;
+  width: 90vh;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-direction: row;
 }
 
-.content-main span{
-    color: #1877f2;
+.redes .redes-sociales li {
+  list-style: none;
+  padding: 20px;
 }
 
-.content-main p{
-    font-size: 1.1em;
-}
-
-.redes{
-    grid-area: redes;
-    padding: 10px;
-    margin: auto;
-    border-radius: 10px;
-	z-index: 1;
-}
-
-.redes h2{  
-    font-family: 'Noto Serif KR', serif;
-    font-size: 3em;
-    color: #DBDBDB;
-}
-
-.redes .redes-sociales{
-    display: flex;
-    flex-direction: row;
-}
-
-.redes .redes-sociales li{
-    list-style: none;
-    padding: 20px;
-}
-
-.redes .redes-sociales li a{
-    position: relative;
-    display: grid;
-    place-items: center;
-    width: 5.125em;
-    height: 5.125em;
-    text-decoration: none;
-    border: 1px solid #DBDBDB;
-    border-radius: 5px;
+.redes .redes-sociales li a {
+  display: grid;
+  position: relative;
+  place-items: center;
+  text-decoration: none;
+  border: 0.5px solid #dbdbdb;
+  border-radius: 5px;
 }
 
 /* Hover de Redes Sociales */
-.facebook a:hover{
-    background: #1877f2;
-    box-shadow: 4px 4px 4px 4px #1877f2;
+.facebook a:hover {
+  background: #1877f2;
+  box-shadow: 4px 4px 4px 4px #1877f2;
 }
 
-.whatsapp a:hover{
-    background: #24da33;
-    box-shadow: 4px 4px 4px 4px #24da33;
+.whatsapp a:hover {
+  background: #24da33;
+  box-shadow: 4px 4px 4px 4px #24da33;
 }
 
-.github a:hover{
-    background: #212121;
-    box-shadow: 4px 4px 4px 4px #212121;
+.github a:hover {
+  background: #212121;
+  box-shadow: 4px 4px 4px 4px #212121;
 }
 
-.instagram a:hover{
-    background: #8A2387;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 4px 4px 4px 4px #8A2387;
+.instagram a:hover {
+  background: #8a2387; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 4px 4px 4px 4px #8a2387;
 }
 
-.twitter a:hover{
-    background: #53b2e9;
-    box-shadow: 4px 4px 4px 4px #53b2e9;
+.twitter a:hover {
+  background: #53b2e9;
+  box-shadow: 4px 4px 4px 4px #53b2e9;
 }
 
-.linkedin a:hover{
-    background: #0e92ffe1;
-    box-shadow: 4px 4px 4px 4px #0e92ffe1;
+.linkedin a:hover {
+  background: #0e92ffe1;
+  box-shadow: 4px 4px 4px 4px #0e92ffe1;
 }
 
-.redes .redes-sociales li a img{
-    max-width: 3.25em;
-    filter: invert(1);
+.redes .redes-sociales li a img {
+  max-width: 3.25em;
+  filter: invert(1);
 }
 
-.footer{
-    grid-area: footer;
+.footer {
+  grid-area: footer;
 }
